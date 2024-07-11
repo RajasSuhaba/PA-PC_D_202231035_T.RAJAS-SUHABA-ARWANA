@@ -5,7 +5,7 @@
    
 Deteksi tepi dan kontur adalah teknik dasar dalam pengolahan citra yang digunakan untuk menemukan batas objek dalam gambar. Teknik ini sangat penting dalam berbagai aplikasi seperti pengenalan objek, segmentasi citra, dan visi komputer.
 
-3. Deteksi Tepi (Edge Detection)
+2. Deteksi Tepi (Edge Detection)
    
 Deteksi tepi adalah proses menemukan batas-batas objek dalam gambar dengan mengidentifikasi titik-titik di mana intensitas piksel berubah secara signifikan. Salah satu algoritma deteksi tepi yang paling umum digunakan adalah algoritma Canny.
 
@@ -97,5 +97,5 @@ Jurnal tentang Deteksi Kontur:
 
 Buku Referensi:
 
-Gonzalez, R. C., & Woods, R. E. (2008). "Digital Image Processing". Buku ini adalah referensi komprehensif tentang teori dan aplikasi pengolahan citra digital. Ini mencakup berbagai topik termasuk deteksi tepi dan kontur.
-Szeliski, R. (2010). "Computer Vision: Algorithms and Applications". Buku ini menyediakan pemahaman mendalam tentang algoritma dan aplikasi visi komputer. Ini termasuk pembahasan tentang deteksi tepi dan kontur serta aplikasi praktisnya.
+1. Gonzalez, R. C., & Woods, R. E. (2008). "Digital Image Processing". Buku ini adalah referensi komprehensif tentang teori dan aplikasi pengolahan citra digital. Ini mencakup berbagai topik termasuk deteksi tepi dan kontur.
+2. Szeliski, R. (2010). "Computer Vision: Algorithms and Applications". Buku ini menyediakan pemahaman mendalam tentang algoritma dan aplikasi visi komputer. Ini termasuk pembahasan tentang deteksi tepi dan kontur serta aplikasi praktisnya.
