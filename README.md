@@ -2,12 +2,15 @@
 
 ### Teori Deteksi Tepi dan Kontur
 1. Pendahuluan
+   
 Deteksi tepi dan kontur adalah teknik dasar dalam pengolahan citra yang digunakan untuk menemukan batas objek dalam gambar. Teknik ini sangat penting dalam berbagai aplikasi seperti pengenalan objek, segmentasi citra, dan visi komputer.
 
-2. Deteksi Tepi (Edge Detection)
+3. Deteksi Tepi (Edge Detection)
+   
 Deteksi tepi adalah proses menemukan batas-batas objek dalam gambar dengan mengidentifikasi titik-titik di mana intensitas piksel berubah secara signifikan. Salah satu algoritma deteksi tepi yang paling umum digunakan adalah algoritma Canny.
 
 Algoritma Canny
+
 Algoritma Canny adalah salah satu metode deteksi tepi yang paling populer karena memberikan hasil yang akurat. Algoritma ini terdiri dari beberapa langkah:
 
 - Penghalusan (Smoothing): Menggunakan filter Gaussian untuk menghaluskan gambar dan mengurangi noise.
@@ -17,29 +20,36 @@ Algoritma Canny adalah salah satu metode deteksi tepi yang paling populer karena
 - Edge Tracking by Hysteresis: Menghubungkan tepi lemah yang terhubung ke tepi kuat untuk membentuk tepi akhir.
 
 3. Deteksi Kontur (Contour Detection)
+   
 Kontur adalah kurva yang menghubungkan semua titik kontinu (sepanjang batas), dengan warna atau intensitas yang sama. Dalam OpenCV, fungsi findContours digunakan untuk mendeteksi kontur dalam gambar biner yang dihasilkan dari deteksi tepi. Kontur dapat digunakan untuk analisis bentuk dan objek dalam gambar, memungkinkan pengukuran area, panjang, dan fitur lainnya dari objek yang terdeteksi.
 
-4. Aplikasi dan Manfaat
+5. Aplikasi dan Manfaat
 - Pengenalan Objek: Deteksi tepi dan kontur membantu dalam mengidentifikasi dan melacak objek dalam gambar atau video.
 - Segmentasi Citra: Teknik ini memudahkan pemisahan objek dari latar belakang untuk analisis lebih lanjut.
 - Vektor Fitur: Kontur dapat digunakan untuk mengekstraksi fitur bentuk dari objek, yang berguna dalam aplikasi pengenalan pola dan klasifikasi.
 
 5. Kesimpulan
+6. 
 Deteksi tepi dan kontur adalah teknik penting dalam pengolahan citra dan visi komputer. Dengan menggunakan algoritma seperti Canny untuk deteksi tepi dan fungsi kontur dalam OpenCV, kita dapat secara efektif mengidentifikasi dan menganalisis batas-batas objek dalam gambar. Ini membuka banyak kemungkinan untuk aplikasi dalam berbagai bidang, termasuk pengenalan objek, analisis citra medis, dan pemantauan visual.
 
 
 ### Tahapan Cara Menyelesaikan Proyek Deteksi Tepi dan Kontur
 1. Pendahuluan
+   
 Proyek ini bertujuan untuk mendeteksi tepi dan kontur objek dalam gambar menggunakan algoritma Canny dan fungsi deteksi kontur dari OpenCV. Deteksi tepi dan kontur sangat penting dalam analisis citra digital, terutama dalam bidang seperti pengenalan objek, visi komputer, dan pengolahan citra medis. Dengan mendeteksi tepi, kita dapat mengekstrak fitur penting dari gambar yang berguna untuk berbagai aplikasi seperti segmentasi gambar, pengenalan pola, dan analisis bentuk.
 
-2. Membaca Gambar
+3. Membaca Gambar
+   
 Gunakan OpenCV untuk membaca gambar dari file yang akan digunakan. Membaca gambar adalah langkah awal yang penting karena gambar adalah data yang akan diolah. OpenCV menyediakan fungsi cv2.imread() yang dapat digunakan untuk membaca gambar dari file. Pastikan gambar yang dipilih relevan dengan tujuan proyek.
 
-3. Konversi Warna
+5. Konversi Warna
+   
 Gambar yang dibaca oleh OpenCV biasanya dalam format BGR (Blue, Green, Red), sedangkan banyak alat visualisasi seperti Matplotlib bekerja dengan format RGB (Red, Green, Blue). Oleh karena itu, konversi dari BGR ke RGB diperlukan agar gambar kompatibel dengan alat-alat visualisasi ini. Konversi warna dapat dilakukan dengan fungsi cv2.cvtColor() dari OpenCV.
 
-4. Deteksi Tepi Menggunakan Algoritma Canny
+7. Deteksi Tepi Menggunakan Algoritma Canny
+   
 Pengaturan Parameter:
+
 Algoritma Canny membutuhkan dua nilai ambang batas untuk mendeteksi tepi dalam gambar. Nilai ambang batas ini menentukan sensitivitas deteksi tepi. Nilai yang lebih rendah akan mendeteksi lebih banyak tepi, termasuk yang kurang signifikan, sementara nilai yang lebih tinggi hanya akan mendeteksi tepi yang lebih kuat. Penentuan nilai ambang batas yang tepat adalah kunci untuk mendapatkan hasil deteksi tepi yang optimal.
 
 Penerapan Algoritma Canny
@@ -53,6 +63,7 @@ Algoritma Canny bekerja dengan beberapa langkah:
 - Edge Tracking by Hysteresis: Menghubungkan tepi lemah ke tepi kuat jika tepi lemah bersebelahan dengan tepi kuat.
 
 5. Deteksi Kontur
+   
 Menemukan Kontur:
 
 Setelah tepi terdeteksi, langkah selanjutnya adalah menemukan kontur. Kontur adalah kurva yang menghubungkan semua titik kontinu yang memiliki intensitas warna yang sama. Dalam konteks pengolahan citra, kontur membantu dalam mengenali bentuk dan batas objek dalam gambar. OpenCV menyediakan fungsi cv2.findContours() untuk mendeteksi kontur dalam gambar biner hasil dari algoritma Canny.
